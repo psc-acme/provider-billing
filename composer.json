@@ -1,0 +1,36 @@
+{
+    "name": "psc-acme/provider-billing",
+    "description": "Package provider-billing for psc-acme organization",
+    "type": "library",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Philipp Scheit",
+            "email": "p.scheit@packagist.com"
+        }
+    ],
+    "autoload": {
+        "psr-4": {
+            "PscAcme\\ProviderBilling\\": "src/"
+        }
+    },
+    "require": {
+        "php": ">=8.2",
+        "symfony/yaml": "^7.0",
+        "symfony/symfony": "^6.3"
+    },
+    "require-dev": {
+        "rector/rector": "^1.0"
+    },
+    "minimum-stability": "dev",
+    "config": {
+        "secure-http": false
+    },
+    "repositories": {
+        "private-packagist": {
+            "type": "composer",
+            "url": "http://repo.packagist.com.lo/psc-acme/"
+        },
+        "packagist.org": false
+    }
+}
